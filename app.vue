@@ -72,8 +72,18 @@
           </div>
         </div>
 
-        
+        <div class="grid grid-cols-3">
+          <!-- card -->
+          <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 grid place-items-center">
+            <h2>Cat Breed</h2>
+            <p>Would you like to know more about different cat breeds and which one might be the best fit for you?</p>
+            <NuxtLink>Click Here</NuxtLink>
+          </div>
+
+          <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 col-span-2">Did You Know?</div>
+        </div>
 
       </main>
     </div>
-  </body></template>
+  </body>
+</template>
