@@ -75,15 +75,32 @@
         <div class="grid grid-cols-3">
           <!-- card -->
           <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 grid place-items-center">
-            <h2 class="text-blue-800 text-2xl font-bold pt-2 uppercase">Cat Breed</h2>
-            <p class="text-center py-6 px-4">Would you like to know more about different cat breeds and which one might be the best fit for you?</p>
-            
-            <div class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-white hover:text-blue-900 border hover:border-blue-900 hover:border-solid">
-              <NuxtLink>Click Here</NuxtLink>
+            <h2 class="text-blue-800 text-2xl font-bold pt-2 uppercase">
+              Cat Breed
+            </h2>
+            <p class="text-center py-6 px-4">
+              Would you like to know more about different cat breeds and which one might be the best fit for you?
+            </p>
+
+            <div
+              class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-white hover:text-blue-900 border hover:border-blue-900 hover:border-solid">
+              <NuxtLink>Click Here!</NuxtLink>
             </div>
           </div>
 
-          <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 col-span-2">Did You Know?</div>
+          <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 col-span-2">
+            <h2 class="text-blue-800 text-2xl font-bold pt-2 pl-4 uppercase">
+              Did You Know ?
+            </h2>
+            <p class="py-6 px-4">
+              Did you know that cats have a special collarbone called the "floating collarbone" or "wishbone" that is not attached to any other bones in their body? This allows cats to fit through narrow spaces and makes them incredibly agile and flexible.
+            </p>
+
+            <div
+              class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-white hover:text-blue-900 border hover:border-blue-900 hover:border-solid">
+              <NuxtLink>Tell me another fact!</NuxtLink>
+            </div>
+          </div>
         </div>
 
       </main>
