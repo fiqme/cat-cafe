@@ -82,7 +82,9 @@
               </div>
             </div>
 
-            <div class="mt-4 border-b border-blue-200"></div>
+            <div class="w-2/3 mx-auto">
+              <div class="my-9 border-b border-blue-200 "></div>
+            </div>
           </div>
         </div>
 
