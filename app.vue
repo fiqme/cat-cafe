@@ -1,8 +1,10 @@
 <template>
-  <body class="bg-purple-200">
+  <body class="bg-white">
     <div>
-      <nav class="flex items-center justify-between flex-wrap bg-purple-400 p-6">
+      <nav class="flex items-center justify-between flex-wrap bg-blue-900 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
+
+          <!-- cat paw icon -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.32776 10.0688C10.874 9.726 11.7494 7.74275 11.2831 5.63907C10.8167 3.5354 9.18513 2.10793 7.63887 2.45073C6.09261 2.79353 5.21719 4.77678 5.68356 6.88045C6.14993 8.98413 7.7815 10.4116 9.32776 10.0688Z"
@@ -24,7 +26,7 @@
         </div>
         <div class="block lg:hidden">
           <button
-            class="flex items-center px-3 py-2 border rounded text-purple-200 border-teal-400 hover:text-white hover:border-white">
+            class="flex items-center px-3 py-2 border rounded text-blue-200 border-blue-200 hover:text-white hover:border-white">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -33,26 +35,45 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-purple-200 hover:text-white mr-4">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
               Location
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-purple-200 hover:text-white mr-4">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
               Cafe List
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-purple-200 hover:text-white">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
               Your Fav
             </a>
           </div>
           <div>
             <a href="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-purple-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">Sign
+              In</a>
           </div>
         </div>
       </nav>
 
       <main>
+        <div class="flex justify-center ">
+          <div class="h-full w-full p-4 grid grid-cols-1">
+            <div class="md:grid md:grid-cols-2">
+              <img src="./assets/img/cat-1.png" alt="cat picture" class="md:pl-60 pl-10 object-cover overflow-hidden">
+              <div class="pt-20 h-full w-full text-lg">
+                <h1 class="text-blue-900 text-4xl font-bold mt-2 mx-2 align-middle">Find Cat Cafe Near You!</h1>
+
+                <p class="my-2 mx-2">Cat cafes typically have a cozy and comfortable atmosphere that's purr-fect for
+                  spending quality time with our furry friends. You'll get to experience the soothing presence of the
+                  cats, watch them play and snuggle up with them. These cafes often have a wide variety of cat breeds to
+                  choose from, so there's always a cat that fits your preference.</p>
+              </div>
+            </div>
+
+            <div class="mt-4 border-b border-blue-200"></div>
+          </div>
+        </div>
+
+        
 
       </main>
     </div>
-  </body>
-</template>
+  </body></template>
