@@ -1,7 +1,7 @@
 <template>
   <body class="bg-white">
     <div>
-      <nav class="flex items-center justify-between flex-wrap bg-blue-900 p-6">
+      <nav class="sticky top-0 inset-x-0 flex items-center justify-between flex-wrap bg-blue-900 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
 
           <!-- cat paw icon -->
@@ -75,9 +75,12 @@
         <div class="grid grid-cols-3">
           <!-- card -->
           <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 grid place-items-center">
-            <h2>Cat Breed</h2>
-            <p>Would you like to know more about different cat breeds and which one might be the best fit for you?</p>
-            <NuxtLink>Click Here</NuxtLink>
+            <h2 class="text-blue-800 text-2xl font-bold pt-2 uppercase">Cat Breed</h2>
+            <p class="text-center py-6 px-4">Would you like to know more about different cat breeds and which one might be the best fit for you?</p>
+            
+            <div class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-white hover:text-blue-900 border hover:border-blue-900 hover:border-solid">
+              <NuxtLink>Click Here</NuxtLink>
+            </div>
           </div>
 
           <div class="bg-white mx-10 rounded-md shadow-lg border border-blue-300 col-span-2">Did You Know?</div>
