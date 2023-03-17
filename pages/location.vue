@@ -1,6 +1,6 @@
 <template>
 <body>
-    <h1>Hi</h1>
+    <h1>hi</h1>
 </body>
 </template>
 
@@ -14,6 +14,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

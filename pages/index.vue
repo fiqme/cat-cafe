@@ -35,7 +35,7 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
-            <NuxtLink to="#" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
+            <NuxtLink to="/location/tempat.vue" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
               Location
             </NuxtLink>
             <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
@@ -57,7 +57,7 @@
         <div class="flex justify-center ">
           <div class="h-full w-full p-4 grid grid-cols-1">
             <div class="md:grid md:grid-cols-2">
-              <img src="./assets/img/cat-1.png" alt="cat picture" class="md:pl-60 pl-10 object-cover overflow-hidden">
+              <img src="~/assets/img/cat-1.png" alt="cat picture" class="md:pl-60 pl-10 object-cover overflow-hidden">
               <div class="pt-20 h-full w-full text-lg">
                 <h1 class="text-blue-900 text-4xl font-bold mt-2 mx-2 align-middle">Find Cat Cafe Near You!</h1>
 
