@@ -1,6 +1,7 @@
 <template>
 <body>
     <h1>hi</h1>
+    <NuxtLink to="/">Location</NuxtLink>
 </body>
 </template>
 
@@ -14,6 +15,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
