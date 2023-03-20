@@ -6,7 +6,7 @@
                 <l-map :use-global-leaflet="false" ref="map" v-model:zoom="zoom" :center="center">
                     <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
                         name="OpenStreetMap"></l-tile-layer>
-                        <l-marker :lat-lng="markerLatLng" ></l-marker>
+                        <l-marker :lat-lng="markerLatLng"></l-marker>
                         <l-marker :lat-lng="markerLatLng2" ></l-marker>
                 </l-map>
 
