@@ -22,7 +22,7 @@
               d="M17.8154 14.4281C19.2073 15.0772 21.0319 14.1102 21.8908 12.2683C22.7497 10.4264 22.3176 8.40707 20.9257 7.758C19.5338 7.10894 17.7091 8.07592 16.8502 9.91782C15.9913 11.7597 16.4234 13.779 17.8154 14.4281Z"
               fill="white" />
           </svg>
-          <span class="font-semibold text-xl tracking-tight">Cat Cafe</span>
+          <NuxtLink class="font-semibold text-xl tracking-tight hover:cursor-pointer" to="/">Cat Cafe</NuxtLink>
         </div>
         <div class="block lg:hidden">
           <button
