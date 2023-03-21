@@ -12,10 +12,14 @@
                     <l-marker v-for="{ lat, lng, city, country, admin_name, population } in places.data" :key="city"
                         :lat-lng="[lat, lng]">
                         <l-popup class="w-52">
-                            <div class="">
-                                <p class="font-bold text-xl">{{ city }}</p>
+                            <div class="bg-blue-900 rounded-lg text-white p-2">
+                                <p class="grid place-items-center popup-title">
+                                    <span class="font-bold text-xl">{{ city }}</span>
+                                    ({{ lat }},{{ lng }})
+                                </p>
+                                
                             </div>
-                            <div class="grid grid-cols-2 -mt-5">
+                            <div class="grid grid-cols-2 mt-1">
                                 <div class="">
                                     State:
                                     <br>Country Origin:
@@ -81,4 +85,8 @@ console.log(places.value.data)
 
 </script>
   
-<style></style>
+<style>
+.popup-title{
+    margin: 0 !important;
+}
+</style>
