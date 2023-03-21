@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <nav class="sticky top-0 inset-x-0 flex items-center justify-between flex-wrap bg-white p-6 shadow-md h-10">
+    <header class="z-50">
+        <nav class="sticky top-0 inset-x-0 flex items-center justify-between flex-wrap bg-white p-6 h-10">
             <div class="flex items-center flex-shrink-0 text-blue-900 mr-6 -mt-3">
                 <NuxtLink class="font-semibold text-xl tracking-tight hover:cursor-pointer flex" to="/">
                     <!-- cat paw icon -->
@@ -28,7 +28,7 @@
     </header>
 
     <!-- body content -->
-    <div>
+    <div class="z-10">
         <slot />
     </div>
 </template>
