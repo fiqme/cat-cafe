@@ -82,6 +82,9 @@ const markerLatLng = ref([3.1478, 101.6953]);
 
 console.log(places.value.data)
 
+definePageMeta({
+    layout: 'location'
+})
 
 </script>
   
