@@ -53,6 +53,7 @@
       </nav>
     </header>
 
+    <!-- body content -->
     <div>
         <slot />
     </div>

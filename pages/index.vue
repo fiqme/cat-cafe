@@ -58,13 +58,11 @@
               Did You Know ?
             </h2>
             <p class="py-6 px-4">
-              Did you know that cats have a special collarbone called the "floating collarbone" or "wishbone" that is not
-              attached to any other bones in their body? This allows cats to fit through narrow spaces and makes them
-              incredibly agile and flexible.
+              {{ cat.fact }}
             </p>
 
             <div class="w-full">
-              <NuxtLink class="bg-blue-900 text-white rounded-b-md  cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white">
+              <NuxtLink class="bg-blue-900 text-white rounded-b-md  cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white" to="/">
                 Tell me another fact!
               </NuxtLink>
             </div>
@@ -75,3 +73,9 @@
     </div>
   </body>
 </template>
+
+<script setup>
+const { data: cat } = await useFetch('https://catfact.ninja/fact')
+console.log(cat.value
+);
+</script>
