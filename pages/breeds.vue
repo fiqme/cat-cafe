@@ -1,7 +1,7 @@
 <template>
     <body class="bg-gray-100">
         <div class="grid grid-cols-4 gap-5 m-2">
-            <div v-for="c in data.data" class="bg-white m-2 rounded-sm shadow-md hover:scale-105">
+            <!-- <div v-for="c in data.data" class="bg-white m-2 rounded-sm shadow-md hover:scale-105">
                 <div class="text-cyan-500 rounded-t-sm grid place-items-center my-2">
                     <p class="ml-2 text-xl font-bold">{{ c.breed }}</p>
                 </div>
@@ -15,14 +15,14 @@
                     <li>Pattern: {{ c.pattern }}</li>
                 </ul>
 
-            </div>
+            </div> -->
 
         </div>
     </body>
 </template>
 
 <script setup>
-const { data } = await useFetch('https://catfact.ninja/breeds');
+// const { data } = await useFetch('https://catfact.ninja/breeds');
 
 
 
