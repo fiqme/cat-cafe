@@ -70,7 +70,7 @@
 
                 <div
                   class="bg-blue-400 text-white w-48 h-10 rounded-md shadow-lg cursor-pointer mx-2 mt-8 hover:bg-blue-300 hover:scale-125 transition hover:delay-75 grid grid-cols-4 relative">
-                  <NuxtLink class="col-span-3 grid place-items-center">Get Started!</NuxtLink>
+                  <NuxtLink class="col-span-3 grid place-items-center" to="/location">Get Started!</NuxtLink>
                   <div class="mt-1 rounded-r-md w-48 pr-4 h-6 overflow-hidden absolute flex justify-end">
                     <svg class="h-10 object-cover" fill="white" xmlns="http://www.w3.org/2000/svg" id="mdi-cat" viewBox="0 0 24 24">
                       <path
@@ -98,9 +98,10 @@
               Would you like to know more about different cat breeds and which one might be the best fit for you?
             </p>
 
-            <div
-              class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white border">
-              <NuxtLink>Click Here!</NuxtLink>
+            <div class="w-full">
+              <NuxtLink to="/breeds" class="bg-blue-900 text-white rounded-b-md  cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white border">
+                Click Here!
+              </NuxtLink>
             </div>
           </div>
 
@@ -114,9 +115,10 @@
               incredibly agile and flexible.
             </p>
 
-            <div
-              class="bg-blue-900 text-white rounded-b-md w-full cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white">
-              <NuxtLink>Tell me another fact!</NuxtLink>
+            <div class="w-full">
+              <NuxtLink class="bg-blue-900 text-white rounded-b-md  cursor-pointer h-10 grid place-items-center hover:bg-cyan-500 hover:text-white">
+                Tell me another fact!
+              </NuxtLink>
             </div>
           </div>
         </div>
