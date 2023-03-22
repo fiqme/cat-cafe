@@ -9,7 +9,7 @@
                     <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
                         name="OpenStreetMap"></l-tile-layer>
                     <l-marker v-for="{ lat, lng, city, country, admin_name, population } in places.data" :key="city"
-                        :lat-lng="[lat, lng]" >
+                        :lat-lng="[lat, lng]">
                         <l-popup class="w-52">
                             <div class="bg-blue-900 rounded-lg text-white p-2">
                                 <p class="grid place-items-center popup-title">
@@ -19,17 +19,18 @@
 
                             </div>
                             <div class="grid grid-cols-2 mt-1">
-                                <div class="">
-                                    State:
-                                    <br>Country Origin:
-                                    <br>Total Population:
+                                <div class="grid-rows-3">
+                                    <div>State:</div>
+                                    <div>Country Origin:</div>
+                                    <div>Total Population:</div>
                                 </div>
-                                <div class="relative">
-                                    <div class="absolute top-0 right-0 pr-2">
-                                    {{ admin_name }}
-                                    <br>{{ country }}
-                                    <br>{{ population }}
+                                
+                                <div class="grid-rows-3 place-content-center pr-2">
+                                    <div>
+                                        {{ admin_name }}
                                     </div>
+                                    <div>{{ country }}</div>
+                                    <div>{{ population }}</div>
                                 </div>
                             </div>
                         </l-popup>
@@ -39,7 +40,8 @@
 
             <!-- sidebar -->
             <div class="bg-white col-span-3 border border-t-gray-300 height-map overflow-auto">
-                <div v-for="{lat, lng, city} in places.data" class="my-5 hover:cursor-pointer hover:opacity-50" @click="onPlaceClick(lat, lng)">
+                <div v-for="{ lat, lng, city } in places.data" class="my-5 hover:cursor-pointer hover:opacity-50"
+                    @click="onPlaceClick(lat, lng)">
                     <div class="pl-3 text-sm text-black flex gap-2">
                         <svg class="w-5" fill="none" stroke="red" stroke-width="1.5" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -60,7 +62,7 @@
 <script setup>
 import { ref } from 'vue';
 import "leaflet/dist/leaflet.css";
-import { LMap, LTileLayer, LMarker, LPopup} from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import data from '@/assets/data/my.json';
 
 const places = ref(data)
@@ -75,12 +77,12 @@ definePageMeta({
 })
 
 // method to zoom upon clicking a place in sidebar
-function onPlaceClick(lat, lng){
+function onPlaceClick(lat, lng) {
     const coordinates = [lat, lng];
-    center.value = coordinates;
     console.log(coordinates);
+    center.value = coordinates;
     zoom.value = 10;
-    
+
 }
 
 </script>

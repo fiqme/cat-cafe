@@ -61,7 +61,7 @@
               Did You Know ?
             </h2>
             <p class="py-6 px-4">
-              <!-- {{ cat.fact }} -->
+              {{ cat.fact }}
             </p>
 
             <div class="w-full absolute inset-x-0 bottom-0">
@@ -80,6 +80,6 @@
 </template>
 
 <script setup>
-// const { data: cat } = await useFetch('https://catfact.ninja/fact')
-// console.log(cat.value);
+const { data: cat } = await useFetch('https://catfact.ninja/fact')
+console.log(cat.value);
 </script>
