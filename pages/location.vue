@@ -5,7 +5,7 @@
             <div class="height-map w-full col-span-9">
                 <p v-for="place in places">{{ place.city }}</p>
 
-                <l-map :use-global-leaflet="false" ref="map" v-model:zoom="zoom" :center="center">
+                <l-map :use-global-leaflet="false" ref="map" :center="center" v-model:zoom="zoom" >
                     <l-tile-layer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base"
                         name="OpenStreetMap"></l-tile-layer>
                     <l-marker v-for="{ lat, lng, city, country, admin_name, population } in places.data" :key="city"
@@ -65,9 +65,10 @@ import "leaflet/dist/leaflet.css";
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import data from '@/assets/data/my.json';
 
-const places = ref(data)
-const zoom = ref(6)
+const places = ref(data);
 const center = ref([3.615342, 107.695053]);
+const zoom = ref(5);
+const map = ref("");
 // const markerLatLng = ref([3.1478, 101.6953]);/
 
 // console.log(places.value.data)
@@ -78,11 +79,8 @@ definePageMeta({
 
 // method to zoom upon clicking a place in sidebar
 function onPlaceClick(lat, lng) {
-    const coordinates = [lat, lng];
-    console.log(coordinates);
-    center.value = coordinates;
-    zoom.value = 10;
-
+    console.log(map.value.leafletObject.setView([lat, lng],12));
+    console.log(map.value.leafletObject);
 }
 
 </script>
