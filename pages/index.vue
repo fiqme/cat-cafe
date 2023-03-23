@@ -81,5 +81,5 @@
 
 <script setup>
 const { data: cat } = await useFetch('https://catfact.ninja/fact')
-console.log(cat.value);
+// console.log(cat.value);
 </script>
