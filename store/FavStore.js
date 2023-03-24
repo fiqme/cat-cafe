@@ -59,19 +59,19 @@ export const useFavStore = defineStore('counter', {
       // }
   },
 
-  async deleteTask(breed) {
-    this.favLists = this.favLists.filter(t => {
-      return t.breed !== breed
-    })
+  // async deleteTask(breed) {
+  //   this.favLists = this.favLists.filter(t => {
+  //     return t.breed !== breed
+  //   })
 
-    const res = await fetch('http://localhost:3000/favLists' + breed, {
-      method: 'DELETE',
-    })
+  //   const res = await fetch('http://localhost:3000/favLists' + breed, {
+  //     method: 'DELETE',
+  //   })
 
-    if (res.error) {
-      console.log(res.error)
-    }
-  },
+  //   if (res.error) {
+  //     console.log(res.error)
+  //   }
+  // },
   // async addFav(breed){
   //     const task = this.tasks.find(t => t.breed === breed)
   //     task.isFav = !task.isFav

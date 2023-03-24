@@ -40,7 +40,7 @@
             <NuxtLink to="/breeds" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4">
               Breed List
             </NuxtLink>
-            <NuxtLink href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
+            <NuxtLink href="/favList" class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white">
               Your Fav
             </NuxtLink>
           </div>
