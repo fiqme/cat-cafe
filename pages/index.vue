@@ -80,6 +80,12 @@
 </template>
 
 <script setup>
+import { useFavStore } from '../store/FavStore'
+const store = useFavStore();
+store.getList();
+
 const { data: cat } = await useFetch('https://catfact.ninja/fact')
 // console.log(cat.value);
+
+
 </script>
