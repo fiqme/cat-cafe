@@ -7,9 +7,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-    modules: [
-      '@nuxtjs/tailwindcss',
-      '@pinia/nuxt',
-   ],
-   devServerHandlers: [],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
+  ],
+  devServerHandlers: [],
 })

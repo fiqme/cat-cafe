@@ -46,7 +46,14 @@ export const useFavStore = defineStore('counter', {
 
   async addFav(breed){
     console.log(breed)
+    if (!this.favLists.includes(breed)){
       this.favLists.push(breed);
+    }
+    else{
+      this.favLists.pop(breed);
+    }
+
+      
 
       // const res = await fetch('http://localhost:3000/favLists',{
       // method: 'POST',
@@ -89,4 +96,8 @@ export const useFavStore = defineStore('counter', {
   //     }
   // }
   },
+  // persist: {
+  //   storage: persistedState.localStorage,
+  // },
+  // persist: true,
 })
